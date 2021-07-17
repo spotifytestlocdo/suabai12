@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>
+    bai-ngay12
+  </title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #141414;
+      height: 100vh;
+    }
+
+    .container {
+      width: 1440px;
+      margin: 0 auto;
+    }
+
+    .box-left {
+      width: 252px;
+      height: 100%;
+      border-right: 1px solid #38383A;
+      display: inline-block;
+    }
+
+    .box-left-head {
+      margin: 60px 39px 72px 39px;
+    }
+
+    .box-left-main > ul > li {
+      color: #EBEBF5;
+      font-size: 14px;
+      font-weight: 600;
+      width: 228px;
+      height: 48px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    .box-left-main > ul > li:hover {
+      background-color: #2F2F2F;
+      color: #FFFFFF;
+      width: 228px;
+      height: 48px;
+      border-radius: 12px;
+    }
+
+    .box-left-main > ul > li > div {
+      position: relative;
+      top: 10px
+    }
+
+    
+    .box-left-main > ul > li > div > span {
+      padding-left: 15.5px;
+    }
+
+    .box-left-main > ul > li > div > img {
+      padding-left: 40.5px;
+    }
+
+    .box-left-main > ul {
+      list-style-type: none;
+    }
+
+    .box-left-footer {
+      margin-top: 480px;
+    }
+
+    .box-left-footer > ul {
+      list-style-type: none;
+    }
+
+    .box-left-footer > ul > li {
+      color: #EBEBF5;
+      width: 228px;
+      height: 48px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .box-left-footer > ul > li > div {
+      position: relative;
+      top: 10px
+    }
+
+    .box-left-footer > ul > li > div > span {
+      padding-left: 13.88px;
+    }
+
+    .box-left-footer > ul > li > div > img {
+      padding-left: 50.87px;
+    }
+
+    .box-left-footer > ul > li:hover {
+      background-color: #2F2F2F;
+      color: #FFFFFF;
+      width: 228px;
+      height: 48px;
+      border-radius: 12px;
+    }
+
+    .box-right {
+      display: inline-block;
+      width: 1110px;
+      height: 100vh;
+      color: #EBEBF5;
+      position: relative;   
+      padding: 57px 48px 35px 24px;
+    }
+
+    .box-right-head {
+      width: 100%;
+      height: 36px;
+      margin-bottom: 50px;
+    }
+
+    .box-right-head-left > span {
+      padding: 8px;
+      margin-right: 37px;
+      width: 62px;
+      height: 16px;
+    }
+
+    .box-right-head-left {
+      width: 49%;
+      display: inline-block;
+      padding-top: 15px;
+    }
+
+    .box-right-head-left > span:hover {
+      background-color: #0061FD;
+      border-radius: 143px;
+    }
+
+    .box-right-head-right {
+      width: 49%;
+      display: inline-block;
+      position: relative;
+    }
+
+    .box-right-head-right > div {
+      position: absolute;
+      right: 0px;
+      top: -20px;
+    }
+
+    .box-right-head-right > div > span {
+      position: relative;
+      margin-left: 35px;
+    }
+
+    .box-right-head-right > div > span > input {
+      width: 318px;
+      height: 34px;
+      background-color: #2F2F2F;
+      position: relative;
+      border-radius: 24px;
+      border: 0;
+      padding-left: 34px;
+    }
+
+    .box-right-head-right > div > img {
+      position: relative;
+      top: 5px;
+    }
+
+    .box-right-head-right > div > span > img {
+      position:absolute;
+      top: 3px;
+      left: 15px;
+      z-index: 1;
+    }
+
+    .box-right-main {
+      display: inline-block;
+      width: 100%;
+      height: 448px;
+      position: relative;
+    }
+
+    .box-right-main-left{
+      margin-left: 20px;
+      width: 908px;
+      height: 448px;
+    }
+
+    .box-right-main-left > h2 { 
+      position: absolute;
+      top: 0px;
+      left: 28px;
+      z-index: 1;
+      width: 104px;
+      height: 33px;
+      font-weight: 800;
+      font-size: 26px;
+    }
+
+    .box-right-main-left > h5 { 
+      position: absolute;
+      bottom:160px;
+      left: 28px;
+      z-index: 1;
+      width: 54px;
+      height: 18px;
+    }
+
+    .box-right-main-left > h3 { 
+      position: absolute;
+      bottom:88px;
+      left: 28px;
+      z-index: 1;
+      width: 446px;
+      height: 68px;
+    }
+
+    .box-right-main-left > button { 
+      background-color: #0061FD;
+      position: absolute;
+      bottom:38px;
+      left: 28px;
+      z-index: 1;
+      padding: 22px 21px 22px 20px;
+      width: 127x;
+      height: 16px;
+      border-radius: 14px;
+      border:0px;
+    }
+
+    .box-right-main-left > button > p { 
+      color: #FFFFFF;
+      display: inline-block;
+      position: relative;
+      top: -25px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .box-right-main-left > button > img {
+      padding-right: 10px;
+      position: relative;
+      top: -23px;
+      left: 10px;
+      display: inline-block;
+    }
+
+    .box-right-main-right {
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+      background-color: #2F2F2F;
+      display: inline-block;
+      width: 204px;
+      height: 448px;
+      position:absolute;
+      right: 0px;
+      top: 0px
+    }
+
+    .box-right-main-right > ul {
+     padding: 0px;
+    }
+
+    .box-right-main-right > ul > li {
+      height: 74px;
+      position: relative;
+    }
+
+    .box-right-main-right > ul > li > img {
+      position: relative;
+      padding: 8px 18px 8px 16px;
+    }
+
+    .box-right-main-right > ul > li > span {
+      position: absolute;
+      width: 112px;
+      height: 36px;
+      top: 15px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #FFFFFF;
+      right: 0px;
+    }
+
+    .box-right-main-right > ul {
+      position: relative;
+      top: -16px;
+      list-style-type: none;
+    }
+
+    .box-right-main-right > ul > li:hover {
+      border-bottom: 1px solid #FFFFFF;
+    }     
+
+    .box-right-footer {
+      
+    }
+
+    .box-right-footer-top {
+      margin-bottom: 30px;
+      height: 30px;
+      width: 100%;
+      position: relative;
+    }
+
+    .box-right-footer-top > h4 {
+      display: inline-block;
+      width: 140px;
+      height: 16px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .box-right-footer-top > span {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+    }
+    
+
+    .box-right-footer-top > span > img {
+      position: relative;
+      top: 10px;
+    }
+
+    .box-right-footer-top > span > img:first-child {
+      margin-right: 30.5px;
+    }
+
+    .box-right-footer-bot > span {
+      margin-right: 14px;
+      display: inline-block;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box-left">
+      <!-- BEGIN BOX-LEFT-HEAD -->
+      <div class="box-left-head">
+        <img src="./images/logo.png" alt="gamesmode" />
+      </div>
+      <!-- END BOX-LEFT-HEAD -->
+
+      <!-- BEGIN BOX-LEFT-MAIN -->
+      <div class="box-left-main">
+        <ul>
+          <li><div><img src="./images/nha.png" alt="nha"/> <span>Home</span></div></li>
+          <li><div><img src="./images/lua.png" alt="lua"/> <span>Store</span></div></li>
+          <li><div><img src="./images/hinh-vuong.png" alt="hinh-vuong"/> <span>Library</span></div></li>
+          <li><div><img src="./images/friend.png" alt="friend"/> <span>Friends</span></div></li>
+          <li><div><img src="./images/live.png" alt="live"/> <span>Live</span></div></li>
+        </ul>
+      </div>
+      <!-- END BOX-LEFT-MAIN -->
+
+      <!-- BEGIN BOX-LEFT-FOOTER -->
+      <div class="box-left-footer">
+        <ul>
+          <li><div><img src="./images/dowload.png" alt="dowload"/> <span>dowload</span></div></li>
+          <li><div><img src="./images/setting.png" alt="setting"/> <span>setting</span></div></li> 
+          <li><div><img src="./images/Ellipse 1.png" alt.="avarta"/> <span>Tung tran</span></div></li>
+        </ul>
+      </div>
+    </div>  
+    <!-- END BOX-LEFT-FOOTER -->
+    
+    <!-- BEGIN BOX-RIGHT -->
+    <div class="box-right">
+      <div class="box-right-head">
+        <!-- BEGIN BOX-RIGHT-HEAD -->
+        
+        <!-- BEGIN BOX-RIGHT-HEAD-LEFT -->
+        <div class="box-right-head-left">
+          <span>Discover</span>
+          <span>Browse</span>
+          <span>Wishlist</span>
+        </div>
+        <!-- END BOX-RIGHT-HEAD-LEFT -->
+      
+        <!-- BEGIN BOX-RIGHT-HEAD-RIGHT -->
+        <div class="box-right-head-right">
+          <div>
+            <img src="./images/ring.png" alt="ring" />
+            <span>
+              <img src="./images/Vector.png" alt="kinhlup" />
+              <input placeholder="search">
+            </span>
+          </div>
+        </div>
+        <!-- END BOX-RIGHT-HEAD-RIGHT -->
+      </div>    
+      <!-- END BOX-RIGHT-HEAD -->
+
+      <!-- BEGIN BOX-RIGHT-MAIN -->
+      <div class="box-right-main">
+        <!-- BEGIN BOX-RIGHT-MAIN-LEFT -->
+        <img 
+            src="./images/07f287dbd878ee5f7bbd68c5510ced12.png"
+            alt="avartar"
+            height="448px"
+            width="780px"
+        />
+        
+        <!-- BEGIN BOX-RIGHT-MAIN-LEFT -->
+        <div class="box-right-main-left">
+          <h2>Fortnite</h2>
+          <h5>Update</h5>
+          <h3>The hunt is on Fortnite Chapter 2 - <br>Season 5: Zero Point.</h3>
+          <button>
+            <p>play for free</p>
+            <img src="./images/mui-ten.png" alt="mui-ten"/>
+          </button>
+        </div>
+        
+        <!-- BEGIN BOX-RIGHT-MAIN-RIGHT -->
+        <div class="box-right-main-right">
+          <ul>
+            <li><img src="./images/1.png" alt="1"/> <span>Fortnite</span></li>
+            <li><img src="./images/2.png" alt="2"/> <span>Rocket League</span></li>
+            <li><img src="./images/3.png" alt="3"/> <span>The Escapists 2</span></li>
+            <li><img src="./images/4.png" alt="4"/> <span>The Long Dark</span></li>
+            <li><img src="./images/5.png" alt="5"/> <span>Yakuza:<br>Like a Dragon</span></li>
+            <li><img src="./images/6.png" alt="6"/> <span>Warhammer:<br>Vermintide 2</span></li>
+          </ul>
+        </div>       
+        <!-- END BOX-RIGHT-MAIN-RIGHT -->
+      </div>
+      
+     
+        <!-- END BOX-RIGHT-MAIN-LEFT -->
+
+        <!-- END BOX-RIGHT-MAIN -->
+        <!-- BEGIN BOX-RIGHT-FOOTER -->
+        <div class="box-right-footer">
+        <!-- BEGIN BOX-RIGHT-TOP -->
+        <div class="box-right-footer-top">
+          <h4>Game On Sale</h4>
+          <span>
+            <img src="./images/trai.png" alt="trai"/>
+            <img src="./images/phai.png" alt="phai">
+          </span>
+        </div>
+        <!-- END BOX-RIGHT-TOP -->
+        </div>
+        <!-- BEGIN BOX-RIGHT-FOOTER-BOT -->
+        <div class="box-right-footer-bot">
+          <span>
+            <img src="./images/21.png" alt="21"/>
+            <p>Valheim</p>
+            <p>Action Games</p>
+            <p>$8.15</p>
+          </span>
+          <span>
+            <img src="./images/22.png" alt="22"/>
+            <p>BIOSHOCK: THE COLLEC...</p>
+            <p>Action, RPG</p>
+            <p>-80% $50 $8.67</p>
+          </span>
+          <span>
+            <img src="./images/23.png" alt="23"/>
+            <p>Unravel Tow</p>
+            <p>Adventure Games</p>
+            <p>$20.38</p>
+          </span>
+          <span>
+            <img src="./images/24.png" alt="24"/>
+            <p>Tick Tock: A Tale for Tow</p>
+            <p>Indie Games</p>
+            <p>-60% $3.47 $1.39</p>
+          </span>  
+          <span>
+            <img src="./images/25.png" alt="25"/>
+            <p>HITMAN 3</p>
+            <p>Action Games</p>
+            <p>$23.99</p>
+          </span>
+        </div>
+        <!-- END BOX-RIGHT-FOOTER-BOT -->
+        <!-- END BOX-RIGHT-FOOTER -->
+      </div>
+      </div>
+    <!-- END BOX-RIGHT -->
+  </div>
+  
+</body>
+
+</html>
